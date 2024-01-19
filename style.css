@@ -1,0 +1,152 @@
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+ol, ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+body {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #54565D;
+    background-color: #fff;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section{
+    padding: 28px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.post_box-title{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.post_box-content .single_post{
+    display: flex;
+    gap: 50px;
+}
+.post_box-content .single_post.gl {
+    gap: 30px;
+}
+.post_box-content  hr{
+    border-color: #EDEEEF;
+    margin: 50px 0;
+}
+.single_post .single_post-img {
+    position: relative;
+    overflow: hidden;
+    /* width: 42%; */
+    min-width: 450px;
+    height: 270px;
+    background: #000;
+}
+
+.single_post .single_post-img img {
+    display: block;
+    max-width: none;
+    margin-top: 0;
+    transition: opacity 0.4s;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.single_post-content .post-title{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid #fff;
+}
+
+.single_post-content .post-title:hover{
+    border: 2px solid #5EBD5B;
+}
+
+.post_count-coments-box{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.single_post-content .post_date{
+    display: block;
+    padding-left: 5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.single_post-content .line-center {
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.single_post-content .post_date-created{
+    font-weight: 400;
+}
+
+.single_post-content .single_post-description{
+    color: #5EBD5B;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.post_count-coments-box{
+    padding-left: 5px;
+}
+
+.post_count-coments-box img{
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    .post_box-content .single_post{
+        flex-wrap: wrap;
+    }
+    .single_post .single_post-img{
+        width: 100%;
+        height: 400px;
+        min-width: unset;
+    }
+}
+@media screen and (max-width: 767px) {
+    .single_post-content .post-title{
+        font-size: 36px;
+    }
+}
